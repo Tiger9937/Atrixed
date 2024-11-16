@@ -1,5 +1,7 @@
 #include <Atrixed.h>
 
+
+
 class sanbox :public Atrixed::App {
 
 public :
@@ -12,6 +14,6 @@ public :
 };
 
 
-Atrixed::App* Atrixed::CreatApplication() {
+Atrixed::App* Atrixed::CreateApplication() {
 	return new sanbox();
 }
