@@ -1,39 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="Atixed">
+      <UniqueIdentifier>{C40FEDA7-B0B1-177E-996C-2BD285AD9ECE}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="Resource Files">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="Atixed\Events">
+      <UniqueIdentifier>{5e224c66-c4d3-4526-b8e6-ddbbe73ebbb2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Atixed\core.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="src\Atixed\App.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Atrixed.h">
-      <Filter>Header Files</Filter>
+      <Filter>Atixed</Filter>
     </ClInclude>
     <ClInclude Include="src\Atixed\EntryPoint.h">
-      <Filter>Header Files</Filter>
+      <Filter>Atixed</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Atixed\core.h">
+      <Filter>Atixed</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Atixed\log.h">
+      <Filter>Atixed</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Atrixed.h" />
+    <ClInclude Include="Event.h">
+      <Filter>Atixed\Events</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Atixed\App.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Atixed</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="cpp.hint" />
+    <ClCompile Include="src\Atixed\log.cpp">
+      <Filter>Atixed</Filter>
+    </ClCompile>
+    <ClCompile Include="Event.cpp">
+      <Filter>Atixed\Events</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -3,7 +3,7 @@
 
 
 namespace Atrixed {
-	class  ATRIXED_API App {
+	class ATRIXED_API App {
 
 		public:
 			App();
@@ -11,10 +11,6 @@ namespace Atrixed {
 			void Run();
 
 	};
-	
-	App* CreatApplication();
-
-
 }
 
 
