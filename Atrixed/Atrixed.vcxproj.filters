@@ -27,9 +27,15 @@
     <ClInclude Include="src\Atixed\EntryPoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Atixed\log.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Atixed\App.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Atixed\log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
