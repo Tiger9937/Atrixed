@@ -26,10 +26,10 @@ project "Atrixed"
     }
 
     -- Include directories
-    includedirs { 
-        "C:/Projects/GameEngin/ExternalLibrary/spdlog/include" 
+    includedirs {
+        "C:/Projects/GameEngin/ExternalLibrary/spdlog/include"
     }
-    
+
     -- Windows-specific settings
     filter "system:windows"
         cppdialect "C++20"
@@ -41,11 +41,11 @@ project "Atrixed"
             "AX_BUILD_DLL"
         }
 
-        -- Post-build command to copy output executable/library
+        -- Post-build command to copy output executable/library       
         postbuildcommands {
             "{COPY} %{cfg.buildtarget.relpath} \"../bin/" .. outputDir .. "/SandBox/\""
         }
-        
+
 
     filter "configurations:Debug"
         defines "AX_DEBUG"
@@ -76,7 +76,7 @@ project "SandBox"
     }
 
     -- Include directories
-    includedirs { 
+    includedirs {
         "C:/Projects/GameEngin/ExternalLibrary/spdlog/include",
         "C:/Projects/GameEngin/Atrixed/src"
     }

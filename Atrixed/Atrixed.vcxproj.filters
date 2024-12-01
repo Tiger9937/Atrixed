@@ -4,9 +4,6 @@
     <Filter Include="Atixed">
       <UniqueIdentifier>{C40FEDA7-B0B1-177E-996C-2BD285AD9ECE}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Atixed\Events">
-      <UniqueIdentifier>{5e224c66-c4d3-4526-b8e6-ddbbe73ebbb2}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Atixed\App.h">
@@ -22,9 +19,6 @@
       <Filter>Atixed</Filter>
     </ClInclude>
     <ClInclude Include="src\Atrixed.h" />
-    <ClInclude Include="Event.h">
-      <Filter>Atixed\Events</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Atixed\App.cpp">
@@ -32,9 +26,6 @@
     </ClCompile>
     <ClCompile Include="src\Atixed\log.cpp">
       <Filter>Atixed</Filter>
-    </ClCompile>
-    <ClCompile Include="Event.cpp">
-      <Filter>Atixed\Events</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

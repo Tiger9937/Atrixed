@@ -1,2 +1,15 @@
-﻿     Creating library ..\bin\Debug-windows-x86_64\Atrixed\Atrixed.lib and object ..\bin\Debug-windows-x86_64\Atrixed\Atrixed.exp
+﻿  App.cpp
+  log.cpp
+C:\Projects\GameEngin\Atrixed\src\Atixed\Log.h(14,42): warning C4251: 'Atrixed::Log::s_CoreLogger': 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of 'Atrixed::Log'
+  (compiling source file 'src/Atixed/log.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(1560,7):
+      see declaration of 'std::shared_ptr<spdlog::logger>'
+  
+C:\Projects\GameEngin\Atrixed\src\Atixed\Log.h(15,42): warning C4251: 'Atrixed::Log::s_ClientLogger': 'std::shared_ptr<spdlog::logger>' needs to have dll-interface to be used by clients of 'Atrixed::Log'
+  (compiling source file 'src/Atixed/log.cpp')
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.42.34433\include\memory(1560,7):
+      see declaration of 'std::shared_ptr<spdlog::logger>'
+  
+  Generating Code...
+     Creating library ..\bin\Debug-windows-x86_64\Atrixed\Atrixed.lib and object ..\bin\Debug-windows-x86_64\Atrixed\Atrixed.exp
   Atrixed.vcxproj -> C:\Projects\GameEngin\bin\Debug-windows-x86_64\Atrixed\Atrixed.dll

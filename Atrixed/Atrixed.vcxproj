@@ -149,7 +149,6 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Event.h" />
     <ClInclude Include="src\Atixed\App.h" />
     <ClInclude Include="src\Atixed\EntryPoint.h" />
     <ClInclude Include="src\Atixed\core.h" />
@@ -157,7 +156,6 @@
     <ClInclude Include="src\Atrixed.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Event.cpp" />
     <ClCompile Include="src\Atixed\App.cpp" />
     <ClCompile Include="src\Atixed\log.cpp" />
   </ItemGroup>
