@@ -19,6 +19,9 @@ project "Atrixed"
     targetdir ("bin/" .. outputDir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputDir .. "/%{prj.name}")
 
+    pchheader "Axpch.h"
+    pchsource "C:/Projects/GameEngin/Atrixed/src/Axpch.cpp"
+
     -- Specify the source files to include
     files {
         "%{prj.name}/src/**.h",
@@ -68,6 +71,8 @@ project "SandBox"
     -- Output directories for binaries and intermediate files
     targetdir ("bin/" .. outputDir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputDir .. "/%{prj.name}")
+
+
 
     -- Specify the source files to include
     files {

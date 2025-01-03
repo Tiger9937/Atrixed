@@ -76,7 +76,8 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Axpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>AX_PLATFORM_WINDOWS;AX_BUILD_DLL;AX_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\ExternalLibrary\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -98,7 +99,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Axpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>AX_PLATFORM_WINDOWS;AX_BUILD_DLL;AX_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\ExternalLibrary\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -124,7 +126,8 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Axpch.h</PrecompiledHeaderFile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>AX_PLATFORM_WINDOWS;AX_BUILD_DLL;AX_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\ExternalLibrary\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -151,13 +154,23 @@
   <ItemGroup>
     <ClInclude Include="src\Atixed\App.h" />
     <ClInclude Include="src\Atixed\EntryPoint.h" />
+    <ClInclude Include="src\Atixed\Events\Application_Event.h" />
+    <ClInclude Include="src\Atixed\Events\Event.h" />
+    <ClInclude Include="src\Atixed\Events\Mouse_Event.h" />
+    <ClInclude Include="src\Atixed\Events\keyBord_Event.h" />
     <ClInclude Include="src\Atixed\core.h" />
     <ClInclude Include="src\Atixed\log.h" />
     <ClInclude Include="src\Atrixed.h" />
+    <ClInclude Include="src\Axpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Atixed\App.cpp" />
+    <ClCompile Include="src\Atixed\Events\Application_Event.cpp" />
+    <ClCompile Include="src\Atixed\Events\Event.cpp" />
     <ClCompile Include="src\Atixed\log.cpp" />
+    <ClCompile Include="src\Axpch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

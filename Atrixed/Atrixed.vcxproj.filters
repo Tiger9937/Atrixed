@@ -1,8 +1,11 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Atixed">
       <UniqueIdentifier>{C40FEDA7-B0B1-177E-996C-2BD285AD9ECE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Atixed\Events">
+      <UniqueIdentifier>{28D7A264-9497-1E9B-5DD2-6718C9516377}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -12,6 +15,18 @@
     <ClInclude Include="src\Atixed\EntryPoint.h">
       <Filter>Atixed</Filter>
     </ClInclude>
+    <ClInclude Include="src\Atixed\Events\Application_Event.h">
+      <Filter>Atixed\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Atixed\Events\Event.h">
+      <Filter>Atixed\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Atixed\Events\Mouse_Event.h">
+      <Filter>Atixed\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Atixed\Events\keyBord_Event.h">
+      <Filter>Atixed\Events</Filter>
+    </ClInclude>
     <ClInclude Include="src\Atixed\core.h">
       <Filter>Atixed</Filter>
     </ClInclude>
@@ -19,13 +34,21 @@
       <Filter>Atixed</Filter>
     </ClInclude>
     <ClInclude Include="src\Atrixed.h" />
+    <ClInclude Include="src\Axpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Atixed\App.cpp">
       <Filter>Atixed</Filter>
     </ClCompile>
+    <ClCompile Include="src\Atixed\Events\Application_Event.cpp">
+      <Filter>Atixed\Events</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Atixed\Events\Event.cpp">
+      <Filter>Atixed\Events</Filter>
+    </ClCompile>
     <ClCompile Include="src\Atixed\log.cpp">
       <Filter>Atixed</Filter>
     </ClCompile>
+    <ClCompile Include="src\Axpch.cpp" />
   </ItemGroup>
 </Project>
